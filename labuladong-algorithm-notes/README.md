@@ -10,7 +10,7 @@
   * [1.7 我写了一个模板，把滑动窗口算法变成了默写题](labuladong-algorithm-notes/算法思维系列/滑动窗口技巧进阶.md)
 
 * [第二章、动态规划系列](labuladong-algorithm-notes/动态规划系列/README.md)
-  * [2.1 动态规划设计：最长递增子序列](labuladong-algorithm-notes/动态规划系列/动态规划设计：最长递增子序列.md)
+  * [2.1 动态规划设计：最长递增子序列](动态规划系列/动态规划设计：最长递增子序列.md)
   * [2.2 二维递增子序列：信封嵌套问题](labuladong-algorithm-notes/算法思维系列/信封嵌套问题.md)
   * [2.3 最大子数组问题](labuladong-algorithm-notes/动态规划系列/最大子数组.md)
   * [2.4 动态规划迷惑行为大赏](labuladong-algorithm-notes/动态规划系列/动态规划答疑篇.md)
