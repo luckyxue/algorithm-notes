@@ -73,6 +73,31 @@ int minDepth(TreeNode root) {
 ### 1.4.3 解开密码锁的最少次数
 
 ```java
+// 转盘锁某一位向上拨动一位数字
+public String plusOne(String s, int i) {
+    // 使用基本数据类型
+    char[] ch = s.toCharArray();
+    if (ch[i] == '9') {
+        ch[i] = '0';
+    } else {
+        ch[i] = (char)(ch[i] + 1);
+    }
+    return new String(ch);
+}
+
+// 转盘锁某一位向下拨动一位数字
+public String miusOne(String s, int i) {
+    // 使用基本数据类型
+    char[] ch = s.toCharArray();
+    if (ch[i] == '0') {
+        ch[i] = '9';
+    } else {
+        ch[i] = (char)(ch[i] - 1);
+    }
+    return new String(ch);
+}
+
+// 打开转盘锁最少的次数
 int openLock(String[] deadends, String target) {
     // 记录需要跳过的死亡密码
     Set<String> deads = new HashSet<>();
