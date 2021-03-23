@@ -2,7 +2,7 @@
 
 [4. Median of Two Sorted Arrays](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
 
-### 方法一
+### 方法一：暴力合并排序
 
 ```java
 // 合并排序然后取中位数
@@ -24,7 +24,7 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 }
 ```
 
-### 方法二
+### 方法二：双指针合并
 
 ```java
 // 使用归并的方式，合并两个有序数组，得到一个大的有序数组。大的有序数组的中间位置的元素，即为中位数。
@@ -54,3 +54,7 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     }
 }
 ```
+
+### 参考题解：
+
+[回溯解法](https://leetcode-cn.com/problems/palindrome-partitioning/solution/hui-su-fa-si-lu-yu-mo-ban-by-fuxuemingzh-azhz/)

@@ -2,6 +2,8 @@
 
 [131. Palindrome Partitioning](https://leetcode-cn.com/problems/palindrome-partitioning/)
 
+### 方法一：递归回溯
+
 ```java
 时间复杂度：O(N * 2 ^ N)，因为总共有 O(2^N)种分割方法，每次分割都要判断是否回文需要 O(N) 的时间复杂度。
 空间复杂度：O(2 ^ N)，返回结果最多有 O(2 ^ N) 种划分方法。
@@ -46,3 +48,6 @@ public boolean isPalindrome(String s) {
     return true;
 }
 ```
+
+### 参考题解：
+
