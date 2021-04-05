@@ -33,3 +33,5 @@ public boolean isValidSerialization(String preorder) {
     return indegree == outdegree;
 }
 ```
+
+### 参考题解：
