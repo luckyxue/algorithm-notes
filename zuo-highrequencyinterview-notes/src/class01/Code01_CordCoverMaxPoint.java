@@ -1,25 +1,29 @@
-package class01;
+package class01.src.class01;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * 给定一个有序数组arr，代表坐落在X轴上的点，给定一个正数K，代表绳子的长度，
+ * 返回绳子最多压中几个点？即使绳子边缘处盖住点也算盖住。
+ */
 public class Code01_CordCoverMaxPoint {
 
     public static int maxPoint1(int[] arr, int L) {
         int ans = 1;
         for (int i = 0; i < arr.length; i++) {
-            int nearst = nearstIndex(arr, i, arr[i] - L);
-            ans = Math.max(ans, i - nearst + 1);
+            int nearest = nearestIndex(arr, i, arr[i] - L);
+            ans = Math.max(ans, i - nearest + 1);
         }
         return ans;
     }
 
-    public static int nearstIndex(int[] arr, int R, int value) {
+    public static int nearestIndex(int[] arr, int R, int value) {
         int L = 0;
         int index = R;
         while (L < R) {
             int mid = L + (R - L) >> 1;
-            if (arr[mid] >= index) {
+            if (arr[mid] >= value) {
                 index = mid;
                 R = mid - 1;
             } else {
@@ -86,12 +90,7 @@ public class Code01_CordCoverMaxPoint {
             int ans1 = maxPoint1(arr, L);
             int ans2 = maxPoint2(arr, L);
             int ans3 = test(arr, L);
-            // if (ans1 != ans2 || ans2 != ans3) {
-            // System.out.println("oops!");
-            // break;
-            // }
-            if (ans1 != ans3) {
-                pprint(arr);
+            if (ans1 != ans2 || ans2 != ans3) {
                 System.out.println("oops!");
                 break;
             }
