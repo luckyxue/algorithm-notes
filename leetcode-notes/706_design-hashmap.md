@@ -2,7 +2,6 @@
 
 [706. Design HashMap](https://leetcode-cn.com/problems/design-hashmap/)
 
-
 ### 方法一：巨型数组
 
 ```java

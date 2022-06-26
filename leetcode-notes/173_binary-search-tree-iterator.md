@@ -2,7 +2,6 @@
 
 [173. Binary Search Tree Iterator](https://leetcode-cn.com/problems/binary-search-tree-iterator/)
 
-
 ### 方法一：扁平化使用数组迭代器
 
 ```java

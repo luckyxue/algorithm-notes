@@ -45,6 +45,7 @@ hs_err_pid*
 classes/
 target/
 build/
+out/
 
 .DS_Store
 
